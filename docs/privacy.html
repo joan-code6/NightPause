@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Privacy policy · Night Pause</title>
+  <style>
+    :root { color-scheme: dark; --bg: #101827; --panel: #18243a; --text: #edf1ff; --muted: #b6c0d7; --accent: #a99bff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 3rem 1.25rem; background: radial-gradient(ellipse at 50% 0%, #25365b 0, var(--bg) 50%); color: var(--text); font: 16px/1.7 system-ui, sans-serif; }
+    main { width: min(100%, 46rem); margin: auto; }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    h1 { margin: .5rem 0; font-size: clamp(2rem, 7vw, 3.2rem); letter-spacing: -.045em; line-height: 1.1; }
+    h2 { margin: 2rem 0 .4rem; font-size: 1.2rem; }
+    p { color: var(--muted); }
+    .brand { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="brand" href="./">Night Pause</a>
+    <h1>Privacy policy</h1>
+    <p>Last updated: 27 September 2026</p>
+    <p>Night Pause helps pause active media on an Android phone after a connected Wear OS watch reports that the user has fallen asleep.</p>
+
+    <h2>Information used</h2>
+    <p>Night Pause uses the watch’s sleep or awake state and the time of that state change. The watch sends this information to the paired phone through the Wear OS Data Layer so the phone can schedule or cancel a pause. The phone checks whether an Android media session is playing and sends it a pause command. Night Pause does not read or store the media title, podcast name, listening history, audio, or account credentials.</p>
+    <p>The app stores its enable setting, pause delay, and event-processing state on the phone or watch. This information is used only to operate Night Pause.</p>
+
+    <h2>Sharing and storage</h2>
+    <p>Night Pause does not send this information to the developer or to a Night Pause server, and does not use advertising or analytics. Sleep state is transmitted only between the paired watch and phone for the app’s core function. App preferences and event-processing state remain on those devices. Uninstalling the apps removes their local app data.</p>
+
+    <h2>Permissions</h2>
+    <p>The watch requests Activity Recognition access so it can receive sleep-state updates from Wear OS Health Services. The phone requires notification access so Android allows Night Pause to control active media sessions. Users can revoke either permission in system settings; the related feature then stops working.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, contact <a href="mailto:NightWatchPlayStore@joancode.dev">NightWatchPlayStore@joancode.dev</a>.</p>
+  </main>
+</body>
+</html>

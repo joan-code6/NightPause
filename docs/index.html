@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Night Pause pauses phone media when your Wear OS watch detects that you have fallen asleep.">
+  <title>Night Pause</title>
+  <style>
+    :root { color-scheme: dark; --bg: #101827; --panel: #18243a; --text: #edf1ff; --muted: #b6c0d7; --accent: #a99bff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 2rem 1.25rem; background: radial-gradient(ellipse at 50% 0%, #25365b 0, var(--bg) 55%); color: var(--text); font: 16px/1.6 system-ui, sans-serif; }
+    main { width: min(100%, 42rem); }
+    .mark { width: 4.5rem; height: 4.5rem; display: grid; place-items: center; margin-bottom: 1.5rem; border-radius: 1.35rem; background: var(--panel); color: var(--accent); font-size: 2rem; box-shadow: 0 1rem 3rem #0005; }
+    h1 { margin: 0; font-size: clamp(2.4rem, 8vw, 4.25rem); letter-spacing: -.055em; line-height: 1.05; }
+    .lead { max-width: 34rem; margin: 1.2rem 0 2rem; color: var(--muted); font-size: 1.2rem; }
+    .card { padding: 1.4rem; border: 1px solid #ffffff18; border-radius: 1.25rem; background: #18243acc; }
+    .card p { margin: 0; }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">☾</div>
+    <h1>Night Pause</h1>
+    <p class="lead">Fall asleep to a podcast. Your Wear OS watch notices, and your phone pauses playback.</p>
+    <section class="card" aria-label="About Night Pause">
+      <p>Night Pause links sleep detection on a supported Wear OS watch to media controls on your Android phone. Choose a pause delay, enable detection on the watch, and playback pauses after you drift off. It never resumes by itself.</p>
+    </section>
+    <nav aria-label="More information">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="https://github.com/joan-code6/NightPause">Source code</a>
+      <a href="mailto:NightWatchPlayStore@joancode.dev">Contact</a>
+    </nav>
+    <footer>Requires a supported Wear OS watch and an Android phone. Sleep detection availability depends on the watch.</footer>
+  </main>
+</body>
+</html>
