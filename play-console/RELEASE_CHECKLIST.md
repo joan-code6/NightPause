@@ -20,11 +20,15 @@ The private upload key and its password are stored outside this project in `~/.c
 7. Use `NightWatchPlayStore@joancode.dev` as the public support contact, add the publisher/controller name to the privacy policy, publish it at a stable public URL, and enter that URL before submitting the listing or release.
 8. Test installation and the complete watch-to-phone flow through Play internal testing before starting closed testing.
 
+Before installing the Play-delivered build, uninstall the sideloaded debug-signed Night Pause apps from the phone and watch. The Play signing identity differs from the debug certificate, so Android will not install it as an update over those sideloaded builds.
+
 This is a personal developer account created after 13 November 2023, so production access requires a closed test with at least 12 testers continuously opted in for 14 days. Internal testing is still available first.
 
 ## Store details to prepare
 
-See `STORE_LISTING.md` for copy and outstanding image assets. Replace the contact placeholder in `PRIVACY_POLICY_DRAFT.md`, publish that policy at a stable public URL, and then use the URL in Play Console.
+See `STORE_LISTING.md` for copy and outstanding image assets. Add the publisher/controller identity to `docs/privacy.html` and `PRIVACY_POLICY_DRAFT.md`, publish the policy at a stable public URL, and enter that URL in Play Console.
+
+The GitHub Pages custom domain is `nightpause.joancode.dev`. In the joancode.dev DNS zone, create a DNS-only CNAME record with name `nightpause` and target `joan-code6.github.io`. Then wait for GitHub Pages to verify the domain and enable **Enforce HTTPS** in the repository's Pages settings. The apex `joancode.dev` already points at the existing profile site and must stay unchanged.
 
 ## Build the bundles again
 
